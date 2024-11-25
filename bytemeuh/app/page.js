@@ -1,73 +1,97 @@
 import Link from "next/link";
 
 export const metadata = {
-  title: "Bytemeuh - Le Réseau d'Information sur la byte de la meuh",
+  title: "Bytemeuh Zoo - Découvrez le Monde des Animaux",
   description:
-    "Bytemeuh propose des services et des informations de qualité sur la byte de la meuh. Découvrez nos ressources et guides complets.",
-  keywords: "Bytemeuh, Bytemheu, informations byte meuh",
+    "Bytemeuh Zoo est votre destination incontournable pour explorer la faune et passer un moment inoubliable en famille. Découvrez nos animaux, activités et événements spéciaux.",
+  keywords: "Bytemeuh, Bytemeuh Zoo,zoo, animaux, faune, nature, visites guidées, activités",
   alternates: {
-    canonical: "https://bytemeuh.vercel.app",
+    canonical: "https://www.bytemeuh-zoo.fr/",
+  },
+  openGraph: {
+    title: "Bytemeuh Zoo - Découvrez le Monde des Animaux",
+    description:
+      "Plongez dans l'univers du Bytemeuh Zoo, une expérience unique pour petits et grands. Rencontrez nos animaux, participez à des activités éducatives et bien plus.",
+    url: "https://www.bytemeuh-zoo.fr/",
+    siteName: "Bytemeuh Zoo",
+    images: [
+      {
+        url: "https://www.bytemeuh-zoo.fr/images/logo.jpg", // Remplacez par votre image
+        width: 1200,
+        height: 630,
+        alt: "Bienvenue au Bytemeuh Zoo",
+      },
+    ],
+    locale: "fr_FR",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Bytemeuh Zoo - Découvrez le Monde des Animaux",
+    description:
+      "Découvrez Bytemeuh Zoo, un lieu magique où la faune, les activités et la famille se rencontrent pour une expérience inoubliable.",
+    images: ["https://www.bytemeuh-zoo.fr/images/logo.jpg"], // Remplacez par votre image
   },
 };
+
 
 export default function Home() {
   return (
     <main className="min-h-screen p-8 sm:p-16 text-center text-gray-800 bg-white dark:bg-gray-900 dark:text-white">
       <header className="mb-12">
         <h1 className="text-4xl sm:text-5xl font-bold mb-4">
-          Bienvenue sur Bytemeuh
+          Bienvenue au Bytemeuh Zoo
         </h1>
         <p className="text-xl sm:text-2xl max-w-3xl mx-auto">
-          Découvrez les meilleures ressources, guides et conseils dans le
-          domaine de la byte de meuh avec Bytemeuh.
+          Partez à la découverte de la biodiversité et des merveilles animales
+          dans notre zoo unique en son genre.
         </p>
       </header>
 
       <section className="my-16">
-        <h2 className="text-3xl font-semibold mb-6">
-          Pourquoi Choisir Bytemeuh ?
-        </h2>
+        <h2 className="text-3xl font-semibold mb-6">Pourquoi Visiter Bytemeuh Zoo ?</h2>
         <p className="max-w-2xl mx-auto mb-8">
-          Bytemeuh est votre source fiable pour des informations de qualité sur
-          la byte de meuh. Notre mission est de fournir un contenu précis et
-          utile pour aider nos utilisateurs à faire des choix éclairés.
+          Bytemeuh Zoo vous offre une expérience immersive avec des animaux du
+          monde entier. Venez explorer, apprendre et vous émerveiller avec nous.
         </p>
       </section>
 
       <section className="my-16">
-        <h2 className="text-3xl font-semibold mb-6">Nos Services</h2>
+        <h2 className="text-3xl font-semibold mb-6">Nos Activités et Services</h2>
         <ul className="max-w-2xl mx-auto text-left list-disc list-inside">
           <li className="mb-4">
             <Link
-              href="/articles/revolution"
+              href="/activites/rencontre-animaux"
               className="text-blue-500 hover:underline"
             >
-              Bytemeuh : Quand les Vaches et la Technologie se Rencontrent
+              Rencontrez nos animaux stars
             </Link>
           </li>
           <li className="mb-4">
             <Link
-              href="/articles/about"
+              href="/activites/visites-guidees"
               className="text-blue-500 hover:underline"
             >
-              Qu'est-ce que Bytemeuh ?
+              Visites guidées éducatives
             </Link>
           </li>
-
-          <li className="mb-4">Actualités et tendances dans byte de meuh</li>
+          <li className="mb-4">
+            Aires de jeux et espaces de pique-nique pour toute la famille
+          </li>
+          <li className="mb-4">Événements spéciaux et ateliers pour enfants</li>
         </ul>
       </section>
 
       <section className="my-16">
-        <h2 className="text-3xl font-semibold mb-6">Nos Derniers Articles</h2>
+        <h2 className="text-3xl font-semibold mb-6">Nos Dernières Actualités</h2>
         <p className="max-w-2xl mx-auto">
-          Explorez nos articles récents pour rester informé des dernières
-          tendances et informations sur la byte de meuh.
+          Ne manquez pas nos dernières nouvelles et événements, comme la
+          naissance de nouveaux habitants ou des journées spéciales !
         </p>
       </section>
 
       <footer className="mt-12 text-sm text-gray-500">
-        © {new Date().getFullYear()} Bytemeuh. Tous droits réservés.
+        © {new Date().getFullYear()} Bytemeuh Zoo. Tous droits réservés.
       </footer>
     </main>
   );

@@ -57,7 +57,7 @@ export default function Home() {
 
       {/* Section Pourquoi Visiter */}
       <section className="my-16 text-center">
-        <h2 className="text-3xl font-semibold mb-6">Pourquoi Visiter le Bytemeuh Zoo ?</h2>
+        <h2 className="text-3xl font-semibold mb-6 text-gray-800">Pourquoi Visiter le Bytemeuh Zoo ?</h2>
         <p className="text-gray-600 max-w-2xl mx-auto mb-8">
           Découvrez des animaux fascinants, des activités éducatives et un environnement naturel préservé pour toute la famille.
         </p>
@@ -71,7 +71,7 @@ export default function Home() {
 
       {/* Section Activités et Services */}
       <section className="my-16">
-        <h2 className="text-3xl font-semibold text-center mb-6">Nos Activités et Services</h2>
+        <h2 className="text-3xl font-semibold text-center mb-6 text-gray-800">Nos Activités et Services</h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
           <div className="bg-white shadow-lg rounded-lg p-6 text-center">
             <h3 className="text-2xl font-semibold text-gray-800 mb-4">Rencontre avec les Animaux</h3>
@@ -107,7 +107,7 @@ export default function Home() {
 
       {/* Section Dernières Actualités */}
       <section className="my-16 text-center">
-        <h2 className="text-3xl font-semibold mb-6">Nos Dernières Actualités</h2>
+        <h2 className="text-3xl font-semibold mb-6 text-gray-800">Nos Dernières Actualités</h2>
         <p className="text-gray-600 max-w-2xl mx-auto mb-8">
           Restez informé des événements, naissances et activités spéciales du Bytemeuh Zoo.
         </p>

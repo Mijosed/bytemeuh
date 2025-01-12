@@ -6,13 +6,6 @@ export default function Navbar() {
     <nav className="flex items-center justify-between bg-gray-800 text-white p-4 shadow-lg">
       {/* Logo et Nom */}
       <Link href="/" className="flex items-center space-x-2">
-        <Image
-          src="/favicon.svg"
-          alt="Bytemeuh Zoo"
-          width={50}
-          height={50}
-          className="hover:opacity-80 transition-opacity"
-        />
         <div className="text-2xl font-bold hover:text-gray-400">
           Bytemeuh Zoo
         </div>
@@ -28,6 +21,15 @@ export default function Navbar() {
         </Link>
         <Link href="/services" className="hover:text-gray-400">
           Services
+        </Link>
+        <Link href="/actualites" className="hover:text-gray-400">
+          Actualités
+        </Link>
+        <Link href="/nos-animaux" className="hover:text-gray-400">
+          Nos Animaux
+        </Link>
+        <Link href="/contact" className="hover:text-gray-400">
+          Contact
         </Link>
       </div>
     </nav>

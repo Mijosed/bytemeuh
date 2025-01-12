@@ -5,11 +5,12 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start",
     "sitemap": "next-sitemap",
+    "start": "next start",
     "lint": "next lint"
   },
   "dependencies": {
+    "font-awesome": "^4.7.0",
     "next": "15.0.1",
     "next-sitemap": "^4.2.3",
     "react": "19.0.0-rc-69d4b800-20241021",

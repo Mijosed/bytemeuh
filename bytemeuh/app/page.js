@@ -1,5 +1,6 @@
 import Link from "next/link";
-import Image from "next/image";
+import Image from "next/image"; 
+import Head from "next/head";
 
 export const metadata = {
   title: "Bytemeuh Zoo - Découvrez le Monde des Animaux",
@@ -36,7 +37,50 @@ export const metadata = {
 };
 
 export default function Home() {
+  const structuredData = {
+    "@context": "https://schema.org",
+    "@type": "Zoo",
+    "name": "Bytemeuh Zoo",
+    "url": "https://www.bytemeuh-zoo.fr/",
+    "description":
+      "Découvrez Bytemeuh Zoo, un lieu magique où la faune, les activités et la famille se rencontrent pour une expérience inoubliable.",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Av. de Paris",
+      "addressLocality": "Paris",
+      "addressRegion": "Île-de-France",
+      "postalCode": "75000",
+      "addressCountry": "FR",
+    },
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday",
+          "Saturday",
+        ],
+        "opens": "10:00",
+        "closes": "18:00",
+      },
+    ],
+    "sameAs": [
+      "https://www.linkedin.com/company/bytemeuh-zoo/",
+      "https://www.instagram.com/BytemeuhZoo",
+      "https://x.com/bytemeuhzoo/",
+    ],
+  };
   return (
+    <>
+      <Head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
+        />
+      </Head>
     <main className="min-h-screen bg-gray-100 p-8">
       {/* Titre principal */}
       <header className="text-center mb-12">
@@ -116,5 +160,6 @@ export default function Home() {
         </Link>
       </section>
     </main>
+    </>
   );
 }

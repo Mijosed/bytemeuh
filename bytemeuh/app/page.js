@@ -1,6 +1,5 @@
 import Link from "next/link";
 import Image from "next/image"; 
-import Head from "next/head";
 
 export const metadata = {
   title: "Bytemeuh Zoo - Découvrez le Monde des Animaux",
@@ -37,52 +36,10 @@ export const metadata = {
 };
 
 export default function Home() {
-  const structuredData = {
-    "@context": "https://schema.org",
-    "@type": "Zoo",
-    "name": "Bytemeuh Zoo",
-    "url": "https://www.bytemeuh-zoo.fr/",
-    "description":
-      "Découvrez Bytemeuh Zoo, un lieu magique où la faune, les activités et la famille se rencontrent pour une expérience inoubliable.",
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "Av. de Paris",
-      "addressLocality": "Paris",
-      "addressRegion": "Île-de-France",
-      "postalCode": "75000",
-      "addressCountry": "FR",
-    },
-    "openingHoursSpecification": [
-      {
-        "@type": "OpeningHoursSpecification",
-        "dayOfWeek": [
-          "Monday",
-          "Tuesday",
-          "Wednesday",
-          "Thursday",
-          "Friday",
-          "Saturday",
-        ],
-        "opens": "10:00",
-        "closes": "18:00",
-      },
-    ],
-    "sameAs": [
-      "https://www.linkedin.com/company/bytemeuh-zoo/",
-      "https://www.instagram.com/BytemeuhZoo",
-      "https://x.com/bytemeuhzoo/",
-    ],
-  };
   return (
     <>
-      <Head>
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
-        />
-      </Head>
     <main className="min-h-screen bg-gray-100 p-8">
-      {/* Titre principal */}
+      
       <header className="text-center mb-12">
         <h1 className="text-4xl font-bold text-gray-800 mb-4">
           Bienvenue au Bytemeuh Zoo
@@ -99,7 +56,7 @@ export default function Home() {
         />
       </header>
 
-      {/* Section Pourquoi Visiter */}
+      
       <section className="my-16 text-center">
         <h2 className="text-3xl font-semibold mb-6 text-gray-800">Pourquoi Visiter le Bytemeuh Zoo ?</h2>
         <p className="text-gray-600 max-w-2xl mx-auto mb-8">
@@ -113,7 +70,7 @@ export default function Home() {
         </Link>
       </section>
 
-      {/* Section Activités et Services */}
+      
       <section className="my-16">
         <h2 className="text-3xl font-semibold text-center mb-6 text-gray-800">Nos Activités et Services</h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
@@ -149,7 +106,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Section Dernières Actualités */}
       <section className="my-16 text-center">
         <h2 className="text-3xl font-semibold mb-6 text-gray-800">Nos Dernières Actualités</h2>
         <p className="text-gray-600 max-w-2xl mx-auto mb-8">

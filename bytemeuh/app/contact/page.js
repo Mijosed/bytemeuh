@@ -1,7 +1,8 @@
 import Link from "next/link";
+import Image from "next/image";
 
 export const metadata = {
-  title: "Bytemeuh Zoo - Contactez-nous",
+  title: "Contact - Bytemeuh Zoo",
   description:
     "Contactez l'équipe du Bytemeuh Zoo pour toute question ou demande d'information. Nous sommes là pour vous aider !",
   keywords: "Bytemeuh, Bytemeuh Zoo, contact, formulaire, zoo, animaux",
@@ -42,6 +43,13 @@ export default function Contact() {
             Besoin d'aide ou d'informations ? Contactez l'équipe du Bytemeuh Zoo
             pour obtenir de l'aide et des réponses à vos questions.
             </p>
+            <Image
+            src="/images/logo.jpg"
+            alt="Contactez-nous"
+            width={200}
+            height={400}
+            className="rounded-lg mt-8 mx-auto"
+            />
         </header>
     
         <section className="my-16">
@@ -111,24 +119,6 @@ export default function Contact() {
             </form>
         </section>
 
-        <section className="my-16">
-
-            <h2 className="text-3xl font-semibold mb-6">Liens Utiles</h2>
-            <div className="flex flex-wrap justify-center space-x-6">
-                <Link href="/" className="hover:text-blue-500">
-                Accueil
-                </Link>
-                <Link href="/actualites" className="hover:text-blue-500">
-                Actualités
-                </Link>
-                <Link href="/services" className="hover:text-blue-500">
-                Services
-                </Link>
-                <Link href="/activites" className="hover:text-blue-500">
-                Activités
-                </Link>
-            </div>
-        </section>
         </main>
     );
 }

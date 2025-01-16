@@ -1,3 +1,4 @@
+import Image from "next/image";
 export const metadata = {
     title: "Naissance au Zoo - Bytemeuh Zoo",
     description:
@@ -16,11 +17,14 @@ export const metadata = {
   
         <section className="max-w-4xl mx-auto text-center">
           <div className="mb-8">
-            <img
-              src="/images/bebe-girafe.jpg"
-              alt="Bébé girafe au Bytemeuh Zoo"
-              className="rounded-lg mx-auto"
-            />
+            <Image
+          src="/images/bebe-girafe.jpg"
+          alt="Bébé girafe au Bytemeuh Zoo"
+          className="rounded-lg mx-auto"
+          width={600}
+          height={400}
+        />
+
           </div>
           <p className="text-gray-700 text-lg mb-8">
             Le Bytemeuh Zoo est fier d'annoncer la naissance d'un adorable bébé girafe ! Ce petit joyau est en parfaite santé et déborde d'énergie. C'est une opportunité unique pour les visiteurs de voir un nouveau-né évoluer dans un environnement sécurisé et naturel.

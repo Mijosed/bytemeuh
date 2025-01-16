@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 
 export const metadata = {
   title: "Actualités - Bytemeuh Zoo",
@@ -8,17 +9,15 @@ export const metadata = {
 export default function ActualitesPage() {
   return (
     <main className="min-h-screen bg-gray-100 p-8">
-      {/* Titre */}
+      
       <header className="text-center mb-12">
         <h1 className="text-4xl font-bold text-gray-800 mb-4">Dernières Actualités</h1>
         <p className="text-lg text-gray-600">
           Restez informé sur les événements, nouveautés et activités spéciales du Bytemeuh Zoo.
         </p>
       </header>
-
-      {/* Liste des Articles */}
       <section className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
-        {/* Article 1 */}
+        
         <div className="bg-white shadow-lg rounded-lg p-6 text-center">
           <h2 className="text-2xl font-semibold text-gray-800 mb-4">
             Nouveau Pensionnaire
@@ -34,7 +33,6 @@ export default function ActualitesPage() {
           </Link>
         </div>
 
-        {/* Article 2 */}
         <div className="bg-white shadow-lg rounded-lg p-6 text-center">
           <h2 className="text-2xl font-semibold text-gray-800 mb-4">
             Festival de la Biodiversité
@@ -50,7 +48,6 @@ export default function ActualitesPage() {
           </Link>
         </div>
 
-        {/* Article 3 */}
         <div className="bg-white shadow-lg rounded-lg p-6 text-center">
           <h2 className="text-2xl font-semibold text-gray-800 mb-4">
             Naissance au Zoo

@@ -9,7 +9,7 @@ export const metadata = {
 export default function ActivitesPage() {
   return (
     <main className="min-h-screen bg-gray-100 p-8">
-      {/* Titre de la page */}
+      
       <header className="text-center mb-12">
         <h1 className="text-4xl font-bold text-gray-800 mb-4">Nos Activités</h1>
         <p className="text-lg text-gray-600 max-w-2xl mx-auto">
@@ -19,9 +19,9 @@ export default function ActivitesPage() {
         </p>
       </header>
 
-      {/* Grille des Activités */}
+      
       <section className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3 max-w-6xl mx-auto">
-        {/* Carte 1 : Rencontre avec les Animaux */}
+        
         <div className="bg-white shadow-lg rounded-lg p-6 text-center">
           <h2 className="text-2xl font-semibold text-gray-800 mb-4">
             Rencontre Animaux
@@ -37,7 +37,7 @@ export default function ActivitesPage() {
           </Link>
         </div>
 
-        {/* Carte 2 : Visites Guidées */}
+        
         <div className="bg-white shadow-lg rounded-lg p-6 text-center">
           <h2 className="text-2xl font-semibold text-gray-800 mb-4">
             Visites Guidées
@@ -54,7 +54,7 @@ export default function ActivitesPage() {
           </Link>
         </div>
 
-        {/* Carte 3 : Ateliers pour Enfants */}
+        
         <div className="bg-white shadow-lg rounded-lg p-6 text-center">
           <h2 className="text-2xl font-semibold text-gray-800 mb-4">
             Ateliers pour Enfants

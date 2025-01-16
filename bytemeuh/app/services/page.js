@@ -8,7 +8,7 @@ export const metadata = {
 export default function ServicesPage() {
   return (
     <main className="min-h-screen bg-gray-100 p-8">
-      {/* Titre */}
+      
       <header className="text-center mb-12">
         <h1 className="text-4xl font-bold text-gray-800 mb-4">Nos Services</h1>
         <p className="text-lg text-gray-600">
@@ -17,9 +17,9 @@ export default function ServicesPage() {
         </p>
       </header>
 
-      {/* Liste des Services */}
+      
       <section className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
-        {/* Service 1 */}
+        
         <div className="bg-white shadow-lg rounded-lg p-6 text-center">
           <h2 className="text-2xl font-semibold text-gray-800 mb-4">
             Restauration
@@ -36,7 +36,7 @@ export default function ServicesPage() {
           </Link>
         </div>
 
-        {/* Service 2 */}
+        
         <div className="bg-white shadow-lg rounded-lg p-6 text-center">
           <h2 className="text-2xl font-semibold text-gray-800 mb-4">
             Boutique de souvenirs
@@ -53,7 +53,7 @@ export default function ServicesPage() {
           </Link>
         </div>
 
-        {/* Service 3 */}
+        
         <div className="bg-white shadow-lg rounded-lg p-6 text-center">
           <h2 className="text-2xl font-semibold text-gray-800 mb-4">
             Aires de jeux

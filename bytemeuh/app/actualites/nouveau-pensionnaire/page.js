@@ -1,3 +1,5 @@
+import Image
+ from "next/image";
 export const metadata = {
     title: "Nouveau Pensionnaire - Bytemeuh Zoo",
     description:
@@ -16,11 +18,13 @@ export const metadata = {
   
         <section className="max-w-4xl mx-auto text-center">
           <div className="mb-8">
-            <img
-              src="/images/paresseux.jpg"
-              alt="Paresseux à trois doigts au Bytemeuh Zoo"
-              className="rounded-lg mx-auto"
-            />
+          <Image
+            src="/images/paresseux.jpg"
+            alt="Paresseux à trois doigts au Bytemeuh Zoo"
+            width={600}
+            height={400}
+            className="rounded-lg mx-auto"
+          />
           </div>
           <p className="text-gray-700 text-lg mb-8">
             Nous sommes ravis d'accueillir un nouveau résident au Bytemeuh Zoo : un paresseux à trois doigts. Cet animal captivant est connu pour son mode de vie paisible et ses mouvements lents qui émerveillent petits et grands.

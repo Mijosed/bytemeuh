@@ -9,12 +9,12 @@ export default function Navbar() {
   return (
     <nav className="bg-gray-800 text-white p-4 shadow-lg">
       <div className="flex items-center justify-between">
-        {/* Logo et Nom */}
+        
         <Link href="/" className="flex items-center space-x-2">
           <div className="text-2xl font-bold hover:text-gray-400">Bytemeuh Zoo</div>
         </Link>
 
-        {/* Bouton Mobile */}
+       
         <button
           onClick={() => setIsMenuOpen(!isMenuOpen)}
           className="sm:hidden text-white focus:outline-none focus:ring-2 focus:ring-gray-400"
@@ -35,11 +35,8 @@ export default function Navbar() {
           </svg>
         </button>
 
-        {/* Liens Desktop */}
+        
         <div className="hidden sm:flex space-x-6">
-          <Link href="/" className="hover:text-gray-400">
-            Accueil
-          </Link>
           <Link href="/activites" className="hover:text-gray-400">
             Activités
           </Link>
@@ -58,12 +55,9 @@ export default function Navbar() {
         </div>
       </div>
 
-      {/* Menu Mobile */}
+      
       {isMenuOpen && (
         <div className="sm:hidden mt-4 space-y-4">
-          <Link href="/" className="block hover:text-gray-400">
-            Accueil
-          </Link>
           <Link href="/activites" className="block hover:text-gray-400">
             Activités
           </Link>

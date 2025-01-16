@@ -28,6 +28,20 @@ export default function RootLayout({ children }) {
         <Navbar />
         {children}
         <footer className="bg-gray-800 text-white p-4 text-center">
+            <div className="flex flex-wrap justify-center space-x-6 mb-2">
+                <Link href="/" className="hover:text-blue-500">
+                Accueil
+                </Link>
+                <Link href="/actualites" className="hover:text-blue-500">
+                Actualités
+                </Link>
+                <Link href="/services" className="hover:text-blue-500">
+                Services
+                </Link>
+                <Link href="/activites" className="hover:text-blue-500">
+                Activités
+                </Link>
+            </div>
           © {new Date().getFullYear()} Bytemeuh Zoo. Tous droits réservés.
           <div>
             Site réalisé par{" "}
@@ -38,15 +52,30 @@ export default function RootLayout({ children }) {
               Mijosé DIFUIDI
             </a>
             <div className="flex justify-center mt-2 space-x-4">
-              <Link href="https://www.linkedin.com/company/bytemeuh-zoo/">
-                <Image src="/images/linkedin.svg" alt="linkedin" width={30} height={30} />
-              </Link>
-              <Link href="https://www.instagram.com/bytemeuh_zoo/">
-                <Image src="/images/instagram.svg" alt="instagram" width={30} height={30} />
-              </Link>
-              <Link href="https://x.com/bytemeuhzoo/">
-                <Image src="/images/twitter.svg" alt="twitter" width={30} height={30} />
-              </Link>
+              <a
+                href="https://www.linkedin.com/company/bytemeuh-zoo/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Image
+                  src="/images/linkedin.svg"
+                  alt="linkedin"
+                  width={30}
+                  height={30}
+                />
+              </a>
+              <a
+                href="https://www.instagram.com/bytemeuh_zoo/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Image
+                  src="/images/instagram.svg"
+                  alt="instagram"
+                  width={30}
+                  height={30}
+                />
+              </a>
             </div>
           </div>
         </footer>
